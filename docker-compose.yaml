@@ -10,11 +10,11 @@ services:
     image: codechat/api:develop
     restart: unless-stopped
     ports:
-      - 8084:8084
+      - 3000:3000
     volumes:
       - instances_connecteds:/codechat/instances
     environment:
-      - SERVER_PORT=8084
+      - SERVER_PORT=3000
       - SESSION_SECRET=${SESSION_SECRET}
 
       - LOG_LEVEL=ERROR|WARN|INFO|DEBUG|LOG|VERBOSE|DARK
