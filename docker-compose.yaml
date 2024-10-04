@@ -21,7 +21,7 @@ services:
       - LOG_COLOR=true
 
       - DATABASE_ENABLED=true
-      - DATABASE_URL=postgres://${DB_USER}:${DB_PASS}@${DB_HOST}:${DB_PORT}/${DB_NAME}?schema=public
+      - DATABASE_URL=${DB_CONNECTION_STRING}
       - DATABASE_SYNC_MESSAGES=true
       - DATABASE_SAVE_DATA_NEW_MESSAGE=true
       - DATABASE_SAVE_MESSAGE_UPDATE=true
