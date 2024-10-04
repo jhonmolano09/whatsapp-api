@@ -52,7 +52,7 @@ services:
       - PROVIDER_PORT=5656
       - PROVIDER_PREFIX=codechat
 
-      - BASE_URL=
+      - API_BACKEND=${API_BACKEND}
 
       # - S3_ENABLED=false
       # - S3_ACCESS_KEY=[ACCESS_KEY]
